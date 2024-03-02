@@ -1,4 +1,5 @@
-FROM node:15-alpine
+#FROM node:15-alpine
+FROM ${REGISTRY_NAME}/baseimages/node:15-alpine
 
 COPY . /src
 RUN cd /src && npm install
